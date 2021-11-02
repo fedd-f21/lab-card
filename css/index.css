@@ -41,6 +41,9 @@ body {
   right: 1rem;
   font-size: 1.5em;
 }
+.info {
+  padding: 0.5rem 1rem;
+}
 .details {
   display: flex;
   flex-wrap: wrap;
@@ -49,12 +52,18 @@ body {
 }
 .property-detail {
   /* display: inline; */
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   text-transform: uppercase;
   font-weight: 700;
   color: #444;
   font-size: 0.75em;
 }
+.property-detail::before {
+  content: "⭐️";
+}
+/* Don't style the first one!! */
+
+
 .cost {
   font-size: 2em;
   font-weight: 300;
@@ -70,7 +79,7 @@ body {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .room {
   display: inline-block;
@@ -84,6 +93,7 @@ body {
 .realtor {
   background-color: #f3f3f3;
   display: flow-root;
+  padding: 0.5rem 1rem;
 }
 .agent {
   display: flex;
