@@ -1,1 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+/* Write this document in order from least specific (top), to most specific (bottom)! */
+
+/******************************/
+/* Type styling */
+body {
+  background-color: aliceblue;
+  color: #111;
+  font: 300 1em 'Roboto', helvetica, arial, sans-serif;
+}
+
+/******************************/
+/* Reusable "generic" rules */
+.list-unstyled {
+  padding-left: 0;
+  list-style-type: none;
+}
+.subheading {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #444;
+}
+
+/******************************/
+/* Specific to this page */
+.property {
+  position: relative;
+  max-width: 20rem;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+}
+.favourite {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5em;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5em;
+  margin: 0.5rem 0;
+}
+.property-detail {
+  /* display: inline; */
+  background-color: lightgreen;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+  font-size: 0.75em;
+}
+.cost {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+.address {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.rooms {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 1rem 0;
+}
+.room {
+  display: inline-block;
+  margin-right: 1em;
+}
+.room-icon {
+  height: 1.5em;
+  margin-right: 0.5em;
+}
+
+.realtor {
+  background-color: #f3f3f3;
+  display: flow-root;
+}
+.agent {
+  display: flex;
+  gap: 0.5em;
+  font-style: normal;
+  margin: 0.5rem 0;
+}
+.agent-face {
+  width: 2.5em;
+  height: 2.5em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.contact {
+  margin: 0;
+}
+.contact-num {
+  margin: 0;
+}
