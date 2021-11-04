@@ -58,10 +58,13 @@ body {
   color: #444;
   font-size: 0.75em;
 }
-.property-detail::before {
-  content: "⭐️";
+.property-detail:not(:first-child)::before {
+  content: "\2022";
+  margin-right: 0.5rem;
+  font-size: 1.5em;
+  vertical-align: middle;
+  line-height: 0.667;
 }
-/* Don't style the first one!! */
 
 
 .cost {
@@ -69,6 +72,17 @@ body {
   font-weight: 300;
   margin: 0.5rem 0;
 }
+
+/* .cost::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: tomato;
+  background-image: url('../img/bedroom.svg');
+  background-size: cover;
+} */
+
 .address {
   font-size: 1em;
   font-weight: 300;
