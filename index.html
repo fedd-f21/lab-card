@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Lab: Card</title>
 		<meta name="description" content="Properties for sale in your city.">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="css/reset.css">
 		<!-- <link rel="stylesheet" href="css/shared.css"> -->
 		<link rel="stylesheet" href="css/index.css">
@@ -22,40 +23,220 @@
 					- 555-555-4321 
 		-->
 
-		<article class="property">
+		<div class="listings">
+			<article class="property">
 
-			<header class="gallery">
-				<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
-			</header>
-			<div class="info">
-				<ul class="details list-unstyled" aria-label="Property details">
-					<li class="property-detail">Deatched House</li>
-					<li class="property-detail">5y Old</li>
-					<li class="property-detail">Non-smoker</li>
-					<li class="property-detail">Close to schools</li>
-					<li class="property-detail">Finished basement</li>
-					<li class="property-detail">Recently renovated</li>
+				<header class="gallery">
+					<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
+				</header>
+				<div class="info">
+					<ul class="details list-unstyled" aria-label="Property details">
+						<li class="property-detail">Deatched House</li>
+						<li class="property-detail">5y Old</li>
+						<li class="property-detail">Non-smoker</li>
+						<li class="property-detail">Close to schools</li>
+						<li class="property-detail">Finished basement</li>
+						<li class="property-detail">Recently renovated</li>
+					</ul>
+					<h2 class="cost">$750,000</h2>
+					<h1 class="address">742 Evergreen Terrace</h1>
+					<button class="favourite"><i class="fa-regular fa-heart"></i></button>
+				</div>
+				<ul class="rooms list-unstyled" aria-label="Rooms of the property">
+					<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
+					<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
 				</ul>
-				<h2 class="cost">$750,000</h2>
-				<h1 class="address">742 Evergreen Terrace</h1>
-				<button class="favourite">❤️</button>
-			</div>
-			<ul class="rooms list-unstyled" aria-label="Rooms of the property">
-				<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
-				<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
-			</ul>
-			<footer class="realtor">
-				<h2 class="subheading">Realtor</h2>
-				<address class="agent">
-					<img src="img/realtor.png" alt="Realtor face" class="agent-face">
-					<dl class="contact">
-						<dt class="contact-name">Hello world</dt>
-						<dd class="contact-num">(555) 555-4321</dd>
-					</dl>
-				</address>
-			</footer>
+				<footer class="realtor">
+					<h2 class="subheading">Realtor</h2>
+					<address class="agent">
+						<img src="img/realtor.png" alt="Realtor face" class="agent-face">
+						<dl class="contact">
+							<dt class="contact-name">Hello world</dt>
+							<dd class="contact-num">(555) 555-4321</dd>
+						</dl>
+					</address>
+				</footer>
 
-		</article>
+			</article>
+
+			<!-- 
+				Where we left off:
+				document.querySelector(`.favourite`).classList.toggle(`yes`) -->
+
+			<!-- <article class="property">
+
+				<header class="gallery">
+					<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
+				</header>
+				<div class="info">
+					<ul class="details list-unstyled" aria-label="Property details">
+						<li class="property-detail">Deatched House</li>
+						<li class="property-detail">5y Old</li>
+					</ul>
+					<h2 class="cost">$750,000</h2>
+					<h1 class="address">742 Evergreen Terrace</h1>
+					<button class="favourite">❤️</button>
+				</div>
+				<ul class="rooms list-unstyled" aria-label="Rooms of the property">
+					<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
+					<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
+				</ul>
+				<footer class="realtor">
+					<h2 class="subheading">Realtor</h2>
+					<address class="agent">
+						<img src="img/realtor.png" alt="Realtor face" class="agent-face">
+						<dl class="contact">
+							<dt class="contact-name">Hello world</dt>
+							<dd class="contact-num">(555) 555-4321</dd>
+						</dl>
+					</address>
+				</footer>
+
+			</article>
+
+			<article class="property">
+
+				<header class="gallery">
+					<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
+				</header>
+				<div class="info">
+					<ul class="details list-unstyled" aria-label="Property details">
+						<li class="property-detail">Deatched House</li>
+						<li class="property-detail">5y Old</li>
+						<li class="property-detail">Non-smoker</li>
+						<li class="property-detail">Close to schools</li>
+						<li class="property-detail">Finished basement</li>
+						<li class="property-detail">Recently renovated</li>
+					</ul>
+					<h2 class="cost">$750,000</h2>
+					<h1 class="address">742 Evergreen Terrace</h1>
+					<button class="favourite">❤️</button>
+				</div>
+				<ul class="rooms list-unstyled" aria-label="Rooms of the property">
+					<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
+					<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
+				</ul>
+				<footer class="realtor">
+					<h2 class="subheading">Realtor</h2>
+					<address class="agent">
+						<img src="img/realtor.png" alt="Realtor face" class="agent-face">
+						<dl class="contact">
+							<dt class="contact-name">Hello world</dt>
+							<dd class="contact-num">(555) 555-4321</dd>
+						</dl>
+					</address>
+				</footer>
+
+			</article>
+
+			<article class="property">
+
+				<header class="gallery">
+					<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
+				</header>
+				<div class="info">
+					<ul class="details list-unstyled" aria-label="Property details">
+						<li class="property-detail">Deatched House</li>
+						<li class="property-detail">5y Old</li>
+						<li class="property-detail">Non-smoker</li>
+						<li class="property-detail">Close to schools</li>
+						<li class="property-detail">Finished basement</li>
+						<li class="property-detail">Recently renovated</li>
+					</ul>
+					<h2 class="cost">$750,000</h2>
+					<h1 class="address">742 Evergreen Terrace</h1>
+					<button class="favourite">❤️</button>
+				</div>
+				<ul class="rooms list-unstyled" aria-label="Rooms of the property">
+					<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
+					<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
+				</ul>
+				<footer class="realtor">
+					<h2 class="subheading">Realtor</h2>
+					<address class="agent">
+						<img src="img/realtor.png" alt="Realtor face" class="agent-face">
+						<dl class="contact">
+							<dt class="contact-name">Hello world</dt>
+							<dd class="contact-num">(555) 555-4321</dd>
+						</dl>
+					</address>
+				</footer>
+
+			</article>
+
+			<article class="property">
+
+				<header class="gallery">
+					<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
+				</header>
+				<div class="info">
+					<ul class="details list-unstyled" aria-label="Property details">
+						<li class="property-detail">Deatched House</li>
+						<li class="property-detail">5y Old</li>
+						<li class="property-detail">Non-smoker</li>
+						<li class="property-detail">Close to schools</li>
+						<li class="property-detail">Finished basement</li>
+						<li class="property-detail">Recently renovated</li>
+					</ul>
+					<h2 class="cost">$750,000</h2>
+					<h1 class="address">742 Evergreen Terrace</h1>
+					<button class="favourite">❤️</button>
+				</div>
+				<ul class="rooms list-unstyled" aria-label="Rooms of the property">
+					<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
+					<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
+				</ul>
+				<footer class="realtor">
+					<h2 class="subheading">Realtor</h2>
+					<address class="agent">
+						<img src="img/realtor.png" alt="Realtor face" class="agent-face">
+						<dl class="contact">
+							<dt class="contact-name">Hello world</dt>
+							<dd class="contact-num">(555) 555-4321</dd>
+						</dl>
+					</address>
+				</footer>
+
+			</article>
+
+			<article class="property">
+
+				<header class="gallery">
+					<img src="img/house.jpg" alt="742 Evergreen Terrace, front view" class="propery-photo">
+				</header>
+				<div class="info">
+					<ul class="details list-unstyled" aria-label="Property details">
+						<li class="property-detail">Deatched House</li>
+						<li class="property-detail">5y Old</li>
+						<li class="property-detail">Non-smoker</li>
+						<li class="property-detail">Close to schools</li>
+						<li class="property-detail">Finished basement</li>
+						<li class="property-detail">Recently renovated</li>
+					</ul>
+					<h2 class="cost">$750,000</h2>
+					<h1 class="address">742 Evergreen Terrace</h1>
+					<button class="favourite">❤️</button>
+				</div>
+				<ul class="rooms list-unstyled" aria-label="Rooms of the property">
+					<li class="room"><img src="img/bedroom.svg" alt="Bedroom icon" class="room-icon"><b>3</b> Bedroom</li>
+					<li class="room"><img src="img/bathroom.svg" alt="Bathroom icon" class="room-icon"><b>2</b> Bathroom</li>
+				</ul>
+				<footer class="realtor">
+					<h2 class="subheading">Realtor</h2>
+					<address class="agent">
+						<img src="img/realtor.png" alt="Realtor face" class="agent-face">
+						<dl class="contact">
+							<dt class="contact-name">Hello world</dt>
+							<dd class="contact-num">(555) 555-4321</dd>
+						</dl>
+					</address>
+				</footer>
+
+			</article> -->
+		</div>
+
+
+
 
 	</body>
 </html>

@@ -24,9 +24,18 @@ body {
 
 /******************************/
 /* Specific to this page */
+
+
+.listings {
+  display: grid;
+  gap: 2em;
+  padding: 1em;
+  /* align-items: start; */
+}
+
 .property {
   position: relative;
-  max-width: 40rem;
+  /* max-width: 40rem; */
   /* margin: 0 auto; */
   background-color: #fff;
   box-shadow:
@@ -34,6 +43,8 @@ body {
     0 0 3em rgba(0,0,0,0.3);
   border-radius: 1rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .favourite {
   background-color: transparent;
@@ -44,9 +55,15 @@ body {
   top: 1rem;
   right: 1rem;
   font-size: 1.5em;
+  color: white;
 }
+.favourite.yes {
+  color: red;
+}
+
 .info {
   padding: 0.5rem 1rem;
+  flex-grow: 1;
 }
 .details {
   display: flex;
@@ -130,4 +147,19 @@ body {
 }
 .contact-num {
   margin: 0;
+}
+
+
+@media screen and (min-width: 40rem) {
+  .listings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .listings {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 70rem;
+    margin: 0 auto;
+  }
 }
